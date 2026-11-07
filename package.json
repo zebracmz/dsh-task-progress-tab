@@ -1,0 +1,55 @@
+{
+  "name": "dsh-task-progress-tab",
+  "version": "0.1.0",
+  "description": "A conversation tab that shows session task progress, with completed items in completion order.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "todo",
+    "todos",
+    "progress",
+    "task",
+    "tab",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "zebracmz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zebracmz/dsh-task-progress-tab.git"
+  },
+  "homepage": "https://github.com/zebracmz/dsh-task-progress-tab#readme",
+  "bugs": {
+    "url": "https://github.com/zebracmz/dsh-task-progress-tab/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
